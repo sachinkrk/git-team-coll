@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+#main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+
+}
+#main>div{
+   display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+#main>div>img{
+height: 350px;
+
+}
+#main>div>div>div{
+    display: flex;
+    margin-top: -5px;
+
+}
+#main>div>div>div>p{
+    margin: 7px;
+    font-size: 20px;
+}
+
+#main>div>div>div>p:first-child{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#main>div>div>div>p:last-child{
+    color: green;
+    font-weight: bold;
+}
+
+#main>div>div>div>p:nth-child(2){
+    color: grey;
+    text-decoration: line-through;
+}
+
+#main>div>div>h2+p{
+    font-size: 20px;
+    color: grey;
+    margin-top: -15px;
+}
+
+
+</style>
+<body>
+    <div id="main">
+        <div>
+           <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPPAUSE-BLACK-PAUS57747861200F37/1562877340930_1..jpg" alt="">
+           <div >
+            <h2>Pause</h2>
+            <p>Men Cotton Long Sleeves Shrug</p>
+             <div>
+                 <p>₹359</p>
+                 <p>₹1499</p>
+                 <p>-76%</p>
+             </div>
+           </div>
+        </div>
+        <div >
+            <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPJUBINATION-SJERS295568BD3913AD/1562955990957_0..jpg?imwidth=320&impolicy=hq" alt="">
+            <div >
+                <h2>JUBINATION</h2>
+                <p>Men Wool Sleeveless Sweater Pack Of 1</p>
+            <div>
+                <p>₹799</p>
+                <p>₹1499</p>
+                <p>-47%</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
