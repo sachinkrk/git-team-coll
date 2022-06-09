@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 100px auto;
+            width: 300px;
+        }
+        #visit{
+            display: flex;
+            flex-direction: column;
+            background-color: #00bfa5;
+            color: white;
+            height: auto;
+            width: auto;
+            text-align: center;
+            padding: 30px 30px;
+        }
+        #visit > div{
+            background-color: #008e76;
+            color: white;
+            padding: 10px;
+            margin: 5px 10px;
+        }
+        #visit > input{
+            padding: 10px;
+            margin: 5px 10px;
+        }
+        #visit > div:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="visit">
+        <h3>- Visitor -</h3>
+        <input id="n" type="text" placeholder="Full Name">
+        <input id="e" type="email" placeholder="Email">
+        <input id="o" type="text" placeholder="Organization">
+        <div onclick="summit()">SIGN UP</div>
+        <div onclick="cancel()">RETURN</div>
+    </div>
+</body>
+<script>
+    function summit(){
+        let name = document.getElementById("n").value;
+        let email = document.getElementById("e").value;
+        let organ = document.getElementById("o").value;
+        alert(name);
+        alert(email);
+        alert(organ);
+
+        if(name,email,organ==undefined){
+            alert("fill the form first")
+        }
+    }
+    function cancel(){
+        document.getElementById("n").value="";
+        document.getElementById("e").value="";
+        document.getElementById("o").value="";
+    }
+</script>
+</html>

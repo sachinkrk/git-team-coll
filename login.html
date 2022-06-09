@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            width: 80%;
+           
+            margin: auto;
+            height: 728px;
+            background-color: #8e99f3;
+            padding-top: 40px;
+        }
+        #innerContent
+        {
+            width: 34%;
+            border: 1px solid gray;
+            margin: auto;
+            height: 80%;
+            margin-top: 45px;
+            border-radius: 10px;
+            background-color: white;
+           
+        }
+        h1
+        {
+            text-align: center;
+            margin-top: 80px;
+            font-family: sans-serif;
+        }
+        #innerContent>div
+        {
+            display: flex;
+            justify-content: center;
+            
+        }
+        input
+        {
+            width: 70%;
+            height: 27px;
+            border: transparent;
+            border-bottom: 2px solid grey;
+            font-size: 20px;
+        }
+        #loginDiv
+        {
+            height: 50px;
+            width: 70%;
+            
+            margin: auto;
+            background-color: #26418f;
+        }
+        #loginDiv>p
+        {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+        }
+        #loginDiv+div
+        {
+            text-align: center;
+            
+            display: flex;
+            justify-content: space-between;
+            width: 32%;
+            margin: auto;
+            margin-top: 20px;
+            font-family: sans-serif;
+        }
+        #loginDiv+div>div
+        {
+            color: teal;
+        }
+        #signup
+        {
+            text-align: center;
+            
+            display: flex;
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            font-family: sans-serif;
+            
+        }
+        #signup div
+        {
+            padding: 5px;
+        }
+        #signup>div+div
+        {
+            color: teal;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="innerContent">
+            <h1>Login</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+            <input type="text" placeholder="Email">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+            <input type="text" placeholder="Password">    
+            </div>
+            <br>
+            <br>
+            <div id="loginDiv">
+                <p>Login</p>
+            </div>
+            
+            <div>Forgot 
+               <div>Password?</div>
+            </div>
+            <br>
+            <div id="signup">
+                <div >
+                Don't have an account?
+            </div>
+                <div>Signup</div>
+            </div>
+</body>
+</html>
